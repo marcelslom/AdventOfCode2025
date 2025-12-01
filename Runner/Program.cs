@@ -17,9 +17,10 @@ namespace Runner
             var instance = (ISolution)Activator.CreateInstance(day.Type);
 
             Console.WriteLine($"Running day {day.Number}...");
+            var filename = instance.UseRealInput ? "input.txt" : "example.txt";
             try
             {
-                var input = File.ReadLines("input.txt").ToArray();
+                var input = File.ReadLines(filename).ToArray();
                 var part1 = instance.Part1(input);
                 Console.WriteLine($"Part 1: {part1}");
             } 
@@ -30,7 +31,7 @@ namespace Runner
 
             try
             {
-                var input = File.ReadLines("input.txt").ToArray();
+                var input = File.ReadLines(filename).ToArray();
                 var part2 = instance.Part2(input);
                 Console.WriteLine($"Part 2: {part2}");
             }

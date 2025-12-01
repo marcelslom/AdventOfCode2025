@@ -418,3 +418,4 @@ FodyWeavers.xsd
 *.msp
 
 Runner/input.txt
+Runner/example.txt
