@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Load example data": {
+      "commandName": "Project",
+      "commandLineArgs": "example"
+    },
+    "Load real data": {
+      "commandName": "Project",
+      "commandLineArgs": "real"
+    }
+  }
+}

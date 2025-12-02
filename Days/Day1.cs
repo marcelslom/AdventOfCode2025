@@ -6,8 +6,6 @@ namespace Days
 {
     public class Day1 : ISolution
     {
-        public bool UseRealInput => true;
-
         public string Part1(string[] input)
         {
             var position = 50;

@@ -7,8 +7,6 @@ namespace Days
 {
     public class Day2 : ISolution
     {
-        public bool UseRealInput => true;
-
         public string Part1(string[] input)
         {
             var ranges = input[0].Split(',');
